@@ -1,0 +1,25 @@
+<html>
+  <head>
+ 
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="..\static\css\login.css">
+    <title>LOGIN</title>
+  </head>
+<body>
+  
+<form class="log-in" action="{{url_for('login')}}" method="post">
+ 
+  <h1 class="title">WELCOME!</h1>
+ 
+   <input class="input" type="email" autofocus placeholder="email" name="email"/>
+  <input class="input" type="password" placeholder="Password" name="password"/>
+  <button class="input submit" type="submit">Log In</button>
+  <a href="#" class="forgot" style="color: rgb(235, 19, 37);font-size: 20px ">Forgot your password?</a>
+</form>
+<form  action="/signup">
+<button class="sign-up" >Register</button>
+</form>
+ </body>
+</html>
