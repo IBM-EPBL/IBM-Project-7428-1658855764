@@ -1,0 +1,21 @@
+.btn{
+    display: block;
+    width: 10%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    background-size: 100%;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+  
+    cursor: pointer;
+    transition: .5s;
+  }
+  .btn:hover{
+    background-position: right;
+  }
