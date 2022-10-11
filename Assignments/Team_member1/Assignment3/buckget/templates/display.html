@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html style="background-color: rgb(195, 227, 244);">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\static\css\display.css">
+    <title>DISPLAY</title>
+</head>
+<body>
+    <pre><a href="/">HOME</a>   <a href="/uploader">Upload </a>    <a href="/display">display </a>
+
+<hr></pre>
+    <form action = "/display" method = "POST" 
+    enctype = "multipart/form-data">
+     <input type="submit" class="btn" id="2" value="DISPLAY"  style = "position:absolute; left:200px;background-color: rgb(112, 206, 112)"></a>
+     </form><br/>
+     <br/>
+     <br/>
+    {% for row in files %}
+
+<div style="border: 1px solid #EFEFEF;margin:10px;">
+  <h3 style="top:100px">Filename : {{row}} </h3>
+  <img src="https://cloud-object-storage-6f-cos-standard-qbe.s3.jp-tok.cloud-object-storage.appdomain.cloud/{{row}}" width="250px " style="height:200px"></td>
+</div>
+{% endfor %}
+</body>
+</html>
