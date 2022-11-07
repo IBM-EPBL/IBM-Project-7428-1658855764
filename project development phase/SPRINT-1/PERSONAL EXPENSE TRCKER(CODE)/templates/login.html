@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animated Login Form</title>
+	<link rel="stylesheet" type="text/css" href="..\static\css\login.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body >
+
+	<div class="container">
+		
+		
+			
+			
+	
+		
+		
+		<div class="login-content">
+			
+			<form action="{{url_for('login')}}" method="POST">
+				<div class="msg">{{ msg }}</div>
+				<img src="..\static\images\avatar.svg">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Email</h5>
+           		   		<input type="email" name="Email" class="input" required>
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password"  name="password" class="input" required>
+            	   </div>
+            	</div>
+            	<a href="#">Forgot Password?</a>
+            	<input type="submit" class="btn" value="Login">
+				
+				<div class="app" ><b>Don't have an account?</b><a class="app1" href="\signup">REGISTER</a></div>
+            </form>
+			
+        </div>
+		
+    </div>
+	
+    <script type="text/javascript" src="..\static\js\login.js"></script>
+</body>
+</html>
