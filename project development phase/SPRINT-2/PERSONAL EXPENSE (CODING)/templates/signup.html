@@ -1,0 +1,92 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sign-up</title>
+<link href="..\static\css\signup.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+   
+ <!--container---------------------->
+
+ <!--sign-up-box-container--->
+<div class="sign-up">
+    
+    <div id="png"><a href="/" title="HOME"><img style="width:55px; height:55px ; " src="..\static\images\home-page.png"></a></div>
+ <!--heading-->
+ <form action="{{url_for('signup')}}" method="post">
+    <div class="msg">{{ msg }}</div>
+ <h1 class="heading">🙌Welcome,Friends</h1>
+ <!--name-box-->
+ <div class="text">
+ <img height="20px" src="..\static\images\user.png" />
+ <input placeholder="Name" type="text" name="username"/>
+ </div>
+ <!--Email-box-->
+ <div class="text">
+ <img height="12px" src="..\static\images/email.png" />
+ <input placeholder=" Example@gmail.com" type="email" name="email" />
+ </div>
+ 
+ <div class="text">
+ <img height="20px" src="..\static\images\password.png" />
+ <input placeholder=" Password" type="password" name="password"/>
+ </div>
+ <div class="text">
+  <img height="12px" src="../static/images/telephone-forward-fill.svg"/>
+  <input placeholder="phone no" type="number" name="phoneno" />
+  </div>
+  <div class="text">
+       <img height="12px" src="../static/images/icons8-sex-100.png"/>
+         <select name="sex" id="sex" style="width: 100px; height:25px;margin:9px;font-size: 20px">
+            <option value="nil" style="font-size:20px"> Gender</option>
+            <option value="male"style="font-size:20px">Male</option>
+            <option value="female"style="font-size:20px">Female</option>
+  </select>
+         <img height="12px" src="../static/images/icons8-age-100.png"/>
+         <input name="age" placeholder="Age" type="number" class="t5" required>
+</div>
+
+  <div class="text">
+   <img height="12px" src="../static/images/icons8-new-job-90.png"/>
+   <input placeholder="JOB" type="text" name="job" />
+    </div>
+
+
+<div class="trems">
+    <input class="check" type="checkbox" required/>
+ <p class="conditions">I read and agree to <a href="#">Trems &amp; Conditions</a></p>
+ </div>
+<!--button--> 
+<div class="toop">
+  <button type="submit" class="btn btn-primary" >CREATE ACCOUNT</button> </div>
+
+</form>
+<!--sign-in-->
+<div class="t"><p class="conditions" id="p3">Already have an account <a href="/signin">Sign in</a></p> </div></div>
+
+<!--text-container-->
+
+<script>
+
+   
+// function random_num($length)
+// {
+// 	$text = "";
+// 	if($length <5)
+// 	{
+// 		$length = 5;
+// 	}
+// 	$len = rand(4,$length);
+
+// 	for ($i=0; $i < $len; $i++) { 
+// 		$text .= rand(0,9);
+		
+// 	}
+// 	return $text;
+
+// }
+// </script>
+</body>
+</html>
