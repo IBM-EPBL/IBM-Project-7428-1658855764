@@ -3,9 +3,9 @@
 from flask import Flask
 from flask_mail import Mail, Message
 
-sender_email="jayaprakash291029@gmail.com"
+sender_email="jayaprakash@gmail.com"
         rec_email= session['username']
-        password='xtbrhwpqbdbxyjir'
+        password='xxxxxxxxxxxxxxxxx'
         message='ALERT MESSAGE FROM EXPENSE TRACKER !PLEASE CHECK  YOUR DAILY EXPENSE YOUR DAILY EXPENSE IS CROSS YOUR MONTHLY LIMIT. UPDATE YOUR MONTHLY LIMIT AND AVOID YOUR UNWANTED DAILY EXPENSE'
         # soup=BeautifulSoup(html_data,'html.parser')      
         print(message)
