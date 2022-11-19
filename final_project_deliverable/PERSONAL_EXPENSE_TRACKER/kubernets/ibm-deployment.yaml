@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: personal-expense-tracker-flask
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: blog-in-flask
+  template:
+    metadata:
+      labels:
+        app: blog-in-flask
+
+    spec:
+      containers:
+        - name: personal-expense-tracker-flask
+          image: jp.icr.io/expense_tracker/ibm_expense_tracker
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+              protocol: TCP

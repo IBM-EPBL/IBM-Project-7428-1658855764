@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block body %} 
+
+
+<p > Currently your MONTHLY limit is ₹ {{amount}}</span></p>
+
+
+
+<form action="/limit1" method="POST">
+
+    <p> ENTER the MONTHLY LIMIT to avoid over EXPENSES</p> <br/>
+    <label  style="margin-left: 10px ;font-family: 'Times New Roman', Times, serif;color:blue">LIMIT </label> 
+    <input type="number" name="limitamount" required/>
+  
+    <label for="month" style="margin-left: 50px ;font-family: 'Times New Roman', Times, serif;color:blue">MONTH</label> 
+    <select  name="month" value="MONTH"  id="paymode">
+        <option >January </option>
+        <option >February</option>
+        <option>March </option>
+        <option >April </option>
+        <option >May</option>
+        <option >June</option>
+        <option >July</option>
+        <option >Augest</option>
+        <option >September</option>
+        <option >October </option>
+        <option >November</option>
+        <option >December</option>
+   
+    </select>
+
+    
+    
+    <button class="btn btn-warning" type="submit" style="margin-left: 250px ">ENTER</button>
+     
+    
+    
+
+
+
+</form>
+{% endblock %}

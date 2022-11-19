@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+ background-color:#eef1f8;
+ margin:0px;
+ padding:0px;
+ background-image: url('../images/signup.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+html {
+	font-size: 8px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+	
+}
+a{
+ text-decoration:none;
+}
+
+.sign-up{
+	position: absolute;
+	left: 55%;
+	top:49%;
+	transform:translate(-50%,-50%);
+	
+	display:flex;
+	justify-content: center;
+	align-items:center;
+}
+
+.heading{
+ font-family:calibri;
+color:black solid;
+position: relative;
+left:50px ;
+top: -10px;
+font-size: 30px;
+}
+.text{
+ width:350px;
+ height:50px;
+ box-shadow:2px 6px 18px rgba(31, 12, 171, 0.3);
+ border-radius: 10px;
+ border-color: aqua solid;
+ display:flex;
+ align-items:center;
+ margin:10px;
+}
+.text select {
+	width:350px;
+	height:50px;
+	outline:rgba(45, 130, 56, 0.807) solid ;
+ border:black ;
+ border-radius: 30px;
+	display:flex;
+	align-items:center;
+	margin:10px;
+   }
+  
+.text input{
+ height:40px;
+ width:100%;
+ outline:rgba(45, 130, 56, 0.807) solid ;
+ border:black ;
+ border-radius: 30px;
+ font-size:14px;
+ margin:5px;
+}
+select option{
+	font-family:calibri;
+	font-size:24px;
+}
+.text img{
+ margin-left:20px; 
+}
+.conditions{
+ font-family:myriad pro;
+ color:black solid;
+ font-size:20px;
+}
+.trems{
+    top:20px ;
+    position: relative;
+	left:37px ;
+
+ display: flex;
+ align-items:center; 
+}
+.conditions a{
+ color:#7d22e3;
+ font-weight:10px;
+ 
+ 
+}
+button{
+ width:200px;
+ height:40px;
+ outline:none;
+ border:none;
+ border-radius:20px;
+ background:linear-gradient(-30deg,#3b02ed,#8e2ae0 55%);
+ box-shadow:2px 6px 16px rgba(66,57,238,0.3);
+ color:#FFFFFF;
+ font-weight:600;
+ letter-spacing:1px;
+ font-weight: 13px;
+}
+button:active{
+ transform:scale(1.1);
+}
+.text-container p{
+ width:70%;
+ text-align: center;
+ font-family:arial;
+ font-size: 20px;
+ font-weight: 400;
+ line-height:0px;
+}
+
+  .toop{
+      position: relative;
+      top: 20px;
+	  left: 75px;
+  }
+  .check{
+      position: relative;
+      top: -8px;
+      left: -5px;
+  }
+  
+  .diag{
+	  position: relative;
+	  
+	  top:0px;
+	  margin: 0px;
+	  padding: 0px;
+	  left:-10px;
+  }
+  .fig1{
+	  position: relative;
+	  size:200%;
+  }
+  #png{
+	  position: relative;
+	 
+	  top:-250px;
+
+  }
+  .or{
+	  position: relative;
+	  left:180px;
+  }
+  .s1{
+	  position: relative;
+	  left: 140px;
+  }
+  .t{
+	  position: relative;
+	  left:-320px ;
+	  top:280px;
+	  font-size: 15px;
+  }
+  

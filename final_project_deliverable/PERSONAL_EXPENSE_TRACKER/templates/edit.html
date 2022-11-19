@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block body %} 
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Edit Expense</h3>
+            <form action="/update/{{dic[1]}}/{{userid}}" method="POST">             
+                <div class="form-group">
+                    <label for="">Date</label> 
+                    <input class="form-control" type="date" name="date" id="date" value="{{dic[2]}}" ></div>
+
+
+                <div class="form-group"> <label for="">Expense name</label> 
+                    <input class="form-control" type="text" name="expensename" value="{{dic[3]}}" id="expensename">
+                </div>
+                <div class="form-group">
+                     <label for="">Expense Amount</label> 
+                      <input class="form-control"  type="number" min="0" name="expenseamount" value="{{dic[4]}}" id="amount">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Paymentmode</label> 
+                    <select class="form-control" name="paymentmode" value="{{dic[5]}}"  id="paymode">
+                        <option  selected >{{dic[5]}}</option>
+                        <option value="cash">cash</option>
+                        <option value="debitcard">debitcard</option>
+                        <option value="creditcard">creditcard</option>
+                        <option value="epayment">epayment</option>
+                        <option value="onlinebanking">onlinebanking</option>
+                    
+                    </select>
+                
+                 <div class="form-group">
+                    <label for="">category</label>
+                    <select class="form-control" name="category" value="category"  id="category">
+
+                        <option  selected >{{dic[6]}}</option>
+                        <option value="food">food</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="business ">Business</option>
+                        <option value="rent">Rent</option>
+                        <option value="EMI">EMI</option>
+                        <option value="other">other</option>
+            
+                    </select>
+                </div>
+
+                <input class="btn btn-danger" type="submit" value="Update" id="">
+        
+            </form>
+        </div>
+    </div>
+    
+</div>
+   
+    {% endblock %}
