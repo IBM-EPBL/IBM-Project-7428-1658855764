@@ -7,7 +7,7 @@
 TECHNOLOGY : Cloud Application 
 TEAM ID : PNT2022TMID02161
 ```
-# 👩‍💻DEMO VIDE LINK
+# 👩‍💻DEMO VIDEO LINK
 https://vimeo.com/772817141
 
 ## 👨‍👩‍👦TEAM MEMBERS
